@@ -1,0 +1,45 @@
+article {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article img {
+  width: 300px;
+}
+
+article svg {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  pointer-events: none;
+  color: aliceblue;
+  opacity: 0;
+}
+
+article svg.like {
+  animation: 1s like ease-in-out;
+}
+
+@keyframes like {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  15% {
+    opacity: 1;
+    scale: 1.2;
+  }
+  30% {
+    scale: 0.95;
+  }
+  45%,
+  80% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+    opacity: 0;
+  }
+}

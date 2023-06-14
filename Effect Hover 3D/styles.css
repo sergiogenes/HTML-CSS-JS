@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#poster {
+  aspect-ratio: 1.7;
+  width: 400px;
+  transition: box-shadon 0.1s, transform;
+  background: url('https://www.gamespot.com/a/uploads/scale_super/1552/15524586/3758536-marvels-spider-man-miles-morales-playstation-5-2020-games-3840x2158-3110.jpg')
+    no-repeat center;
+  background-size: cover;
+}
+
+#poster:hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
