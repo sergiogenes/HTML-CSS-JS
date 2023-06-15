@@ -1,0 +1,10 @@
+picture {
+  display: inline-block;
+  background-color: #ff0;
+}
+
+picture img {
+  max-width: 300px;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+}
